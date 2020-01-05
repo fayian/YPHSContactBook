@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Post";
+}
+
+<h1>Post</h1>
+<form method="post" asp-controller="Home" asp-action="PostContactBook">
+    <table id="Table1" cellspacing="0" cellpadding="0" border="1" style="border-color:DarkGray;width:730px;border-collapse:collapse;">
+        <tr>
+            <td style="WIDTH: 103px;background-color:#FFFFD5;text-align:center;">
+                <span id="Label9" style="color:#404040;font-family:微軟正黑體;font-size:12pt;">主　　旨</span>
+            </td>
+            <td style="WIDTH: 103px;background-color:#FFFFD5;text-align:left;">
+                <input name="title" type="text" value="@(DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day + "班級聯絡簿")" maxlength="80" style="color:#404040;font-family:微軟正黑體;height:25px;width:620px;" />
+            </td>
+        </tr>
+        <tr>
+            <td style="WIDTH: 103px;background-color:white;text-align:center;">
+                <span id="Label10" style="color:#404040;font-family:微軟正黑體;font-size:12pt;">內　　容</span>
+            </td>
+            <td style="WIDTH: 103px;background-color:white;text-align:left;">
+                <textarea name="content" rows="2" cols="20" style="color:#404040;font-family:微軟正黑體;height:280px;width:620px;"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td style="WIDTH: 103px;background-color:#FFFFD5;text-align:center;">
+                <span id="Label11" style="color:#404040;font-family:微軟正黑體;font-size:12pt;">附　　件</span>
+            </td>
+            <td style="WIDTH: 103px;background-color:#FFFFD5;text-align:left;">
+                <input name="externalLink" type="text" maxlength="200" style="color:#404040;font-family:微軟正黑體;height:25px;width:620px;" />
+            </td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="發佈">
+</form>
+

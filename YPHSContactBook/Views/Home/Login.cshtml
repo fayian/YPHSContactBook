@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+<br>
+<form method="post" asp-controller="Home" asp-action="Login">
+    <p>帳　　號：<input type="text" name="account"></p>
+    <p>密　　碼：@Html.Password("password")</p>
+    <p>導　　班：<input type="text" name="classID"></p>
+    <p>保持登入：<input type="checkbox" value="true" name="stayLoggedIn"></p>
+    <input type="submit" value="登入">
+</form>
+
+@if((bool)ViewData["loginFailed"]){
+    <br><p style="color:red">登入失敗</p>
+}
