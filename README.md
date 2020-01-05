@@ -13,4 +13,4 @@
 ## 使用範例
 
 範例影片:
-[![使用範例](https://img.youtube.com/vi/9ZF_qOAychw/0.jpg)](https://youtu.be/Hlv6cfXyYmE)
+[![使用範例](media/video.jpg)](https://youtu.be/Hlv6cfXyYmE)
